@@ -62,7 +62,7 @@ const Wish = ({ history }) => {
 	};
 
 	const title = (name) => {
-		const wish = "Happy Birthday     Makeup Artist     Hồng Hà !";
+		const wish = "Happy Birthday      Makeup Artist      Hồng Hà !";
 		const base_letters = [];
 		const name_letters = [];
 
