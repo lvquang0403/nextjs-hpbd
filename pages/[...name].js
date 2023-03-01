@@ -62,7 +62,7 @@ const Wish = ({ history }) => {
 	};
 
 	const title = (name) => {
-		const wish = "Happy Birthday Hồng Hà !";
+		const wish = "Happy Birthday     Makeup Artist     Hồng Hà !";
 		const base_letters = [];
 		const name_letters = [];
 
@@ -126,7 +126,7 @@ const Wish = ({ history }) => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Happy Birthday {name && name[0]}</title>
+				<title>Happy Birthday Hà</title>
 				<meta
 					name="description"
 					content={`A surprise birthday wish!`}
@@ -138,10 +138,11 @@ const Wish = ({ history }) => {
 			<main className={styles.animate}>
 				<div>
 					<div className={styles.main}>{title(name && name[0])}</div>
+					{/* <h3 style={{textAlign: "center", fontSize: "32px" }}>Makeup Artist</h3> */}
+					<img src="\media\panda_makeup.png" width={300} alt="Girl in a jacket" className={styles.desc}></img>
 					<p className={styles.desc}>
 						{messages[randomNumber(0, messages.length)].value}
 					</p>
-					<img src="\media\panda_makeup.png" width={300} alt="Girl in a jacket" className={styles.desc}></img>
 				</div>
 
 				<div className={styles.buttonContainer}>
