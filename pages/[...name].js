@@ -12,7 +12,7 @@ import { Button, CopyLinkButton } from "../components";
 const Wish = ({ history }) => {
 	const router = useRouter();
 	const { name } = router.query; // gets both name & color id in form of array [name,colorId]
-	const color = name[1]; //extracting colorId from name
+	const color = name ? name[1] : 0; //extracting colorId from name
 	const [downloading, setDownloading] = useState(false);
 	const [downloadedOnce, setDownloadedOnce] = useState(false);
 	const audioRef = useRef();
