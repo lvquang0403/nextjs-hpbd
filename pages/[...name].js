@@ -139,7 +139,7 @@ const Wish = ({ history }) => {
 				<div>
 					<div className={styles.main}>{title(name && name[0])}</div>
 					{/* <h3 style={{textAlign: "center", fontSize: "32px" }}>Makeup Artist</h3> */}
-					<img src="\media\panda_makeup.png" width={300} alt="Girl in a jacket" className={styles.desc}></img>
+					<img src="\media\panda_makeup2.png" width={300} alt="Girl in a jacket" className={styles.desc}></img>
 					<p className={styles.desc}>
 						{messages[randomNumber(0, messages.length)].value}
 					</p>
